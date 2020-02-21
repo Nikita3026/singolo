@@ -1,0 +1,224 @@
+/*Fonts*/
+/* lato-300 - latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Lato Light'), local('Lato-Light'),
+         url('../assets/fonts/lato-v16-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../assets/fonts/lato-v16-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* lato-regular - latin */
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lato Regular'), local('Lato-Regular'),
+         url('../assets/fonts/lato-v16-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../assets/fonts/lato-v16-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* lato-700 - latin */
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Lato Bold'), local('Lato-Bold'),
+         url('../assets/fonts/lato-v16-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../assets/fonts/lato-v16-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* lato-900 - latin */
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Lato Black'), local('Lato-Black'),
+         url('../assets/fonts/lato-v16-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../assets/fonts/lato-v16-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+body{
+    font-size:18px;
+    font-family: 'Lato', sans-serif;
+    font-weight:400;
+    line-height:1.6;
+    color:#FFFFFF;
+    margin:0;
+}
+*,
+*:before,
+*:after{
+    box-sizing:border-box;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin:0;
+}
+/*Container*/
+.container{
+    width:100%;
+    max-width:960px;
+    margin:0 auto;
+    padding-left:10px;
+    padding-right:9px;
+    position: relative;
+}
+/*Header*/
+.header
+{   
+    background-color:#32323D;
+    height:89px;
+}
+.header__inner{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.header__line{
+    height:6px;
+    background-color:#383748;
+    width:100%;
+}
+/*Logo*/
+.logo{
+    text-transform: uppercase;
+    font-size:24.2px;
+    font-weight:700;
+    margin-top:25px;
+}
+.red__logo{
+    color:#D97065;
+}
+/*Nav*/
+.nav__links{
+    position: absolute;
+    top:15px;
+    right:9px;
+}
+.nav__link::before{
+    font-size:12px;
+    content:"·";
+    color:#4C4A63;
+    margin-right:13px;
+    margin-left:10px;
+}
+.first:before{
+    content:"";
+}
+.nav__link{
+    color:white;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-size:12px;
+    font-weight:700;
+    transition:color linear 0.2s;
+    letter-spacing: -0.1px;
+}
+.list
+{
+    display:inline;
+}
+.active{
+    color:#D97065;
+}
+.nav__link:hover{
+    color:#D97065;
+    cursor:pointer;
+}
+.nav__link:focus{
+    color:#D97065;
+}
+/*Slider*/
+.slider{
+    height:594px;
+    background-color:#DA7066;
+}
+.arrow__left{
+    position: absolute;
+    left:12px;
+    top:281px;
+}
+.arrow__right{
+    position: absolute;
+    right:10px;
+    top:280px;
+}
+.arrow__left:hover,.arrow__right:hover{
+    cursor:pointer;
+}
+.vertical__phone{
+    position:absolute;
+    top:53px;
+    left:82px;
+}
+.gorizontal__phone{
+    position:absolute;
+    top:174px;
+    left:395px;
+}
+.slider__line{
+    height:6px;
+    background-color:#D4696D;
+    width:100%;
+}
+/*Our services*/
+.our__services{
+    height:494px;
+    background-color:#F2F2F2;
+    color:#666D89;
+    text-align:left;
+}
+ .service__text__block{
+    margin-top:0px;
+    padding-top: 0px;
+    width:230px;
+    height:90px;
+}
+.title{
+    margin-top:0px;
+    padding-top:53px;
+    font-size:30px;
+    font-weight:900;
+}
+.text__block{
+    width:950px;
+}
+.text{
+    padding-top:12px;
+    font-weight:300;
+    text-align:justify;
+    line-height:1.77;
+    word-spacing:0.4px;
+    width:940px;
+} 
+.service__description__block{
+    width:940px;
+    margin-top:45px;
+}
+.service__line{
+    width:960px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:32px;
+}
+.service{
+    width:320px;
+    height:90px;
+    display: flex;
+}
+.service__image{
+    width:60px;
+    height:60px;
+    margin-right:20px;
+}
+.service__title{
+    margin-top:0px;
+    font-weight:900;
+    line-height: 1.1;
+}
+.service__text{
+    text-align:justify;
+    margin-top:8px;
+    line-height:21.56px;
+    width:220px;
+    height:90px;
+    font-size:12px;
+}
