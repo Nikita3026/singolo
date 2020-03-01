@@ -1,0 +1,195 @@
+/*Fonts*/
+/* lato-300 - latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Lato Light'), local('Lato-Light'),
+         url('../assets/fonts/lato-v16-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../assets/fonts/lato-v16-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* lato-regular - latin */
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lato Regular'), local('Lato-Regular'),
+         url('../assets/fonts/lato-v16-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../assets/fonts/lato-v16-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* lato-700 - latin */
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Lato Bold'), local('Lato-Bold'),
+         url('../assets/fonts/lato-v16-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../assets/fonts/lato-v16-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* lato-900 - latin */
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Lato Black'), local('Lato-Black'),
+         url('../assets/fonts/lato-v16-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../assets/fonts/lato-v16-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  body{
+    font-size:18px;
+    font-family: 'Lato', sans-serif;
+    font-weight:400;
+    line-height:1.6;
+    color:#FFFFFF;
+    margin:0;
+}
+*,
+*:before,
+*:after{
+    box-sizing:border-box;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin:0;
+}
+/*Container*/
+.container{
+    width:100%;
+    max-width:960px;
+    margin:0 auto;
+    padding-left:10px;
+    padding-right:9px;
+    position: relative;
+}
+/*Portfolio*/
+.portfolio
+{
+    height:864px;
+    background-color: #32323D;
+}
+.portfolio__line
+{
+    height:6px;
+    background-color:#383748;
+}
+.title__portfolio{
+    color:#6B688B;
+    font-size:30px;
+    font-weight:900;
+    padding-top:55px;
+    letter-spacing: -0.3px;
+}
+.subtitle__portfolio{
+    margin-top:12px;
+    font-weight:300;
+    color:#7A789E;
+    letter-spacing: 0.07px;
+}
+.port__nav{
+    margin-top:6px;
+}
+
+.item__port__nav{
+    display:inline;
+    color:#676585;
+    border:1px solid #676585;
+    padding:3px 6px 3px 6px;
+    font-size:12px;
+    border-radius:5px;
+    text-decoration: none;
+    margin-right:7px;
+}
+.first__nav{
+    padding: 3px 7px 3px 7px;
+}
+.third__nav{
+    margin-right:5px;
+    padding:3px 5px 3px 6px;
+}
+.item__port__nav:hover{
+    color:white;
+    border-color:white;
+    cursor:pointer;
+}
+.gallery{
+    display:flex;
+    flex-wrap: wrap;
+}
+.gallery__item
+{
+    margin-top:20px;
+    margin-right:20px;
+}
+.first__row{
+    margin-top:19px;
+}
+.last{
+    margin-right:0px;
+}
+
+/*About us*/
+.about__us{
+    height: 728px;
+    background-color:#F2F2F2;
+}
+.about__us__line{
+    height:6px;
+    background-color:white;
+}
+.title__about{
+    color:#6A6889;
+    font-size:30px;
+    font-weight:900;
+    padding-top:54px;
+}
+.subtitle__about{
+    margin-top:12px;
+    font-weight:300;
+    color:#8584A6;
+    letter-spacing: 0.07px;
+    text-align: justify;
+}
+.peoples{
+    display:flex;
+    margin-top: 48px;
+}
+.people__item{
+    margin-right:19px;
+}
+.people__second{
+    margin-right:21px;
+}
+.people__name{
+    margin-top:5px;
+    font-weight: 900;
+    color:#6A6889;
+    letter-spacing: -0.2px;
+}
+.people__info{
+    margin-top:5px;
+    color:#7A789E;
+    font-size:12px;
+    text-align:justify;
+    letter-spacing: 0.03px;
+    line-height: 1.8;
+}
+.people__first{
+    letter-spacing: -0.1px;
+}
+.people__socials{
+    margin-top:24px;
+
+}
+.social__item
+{
+    display:inline;
+    margin-right:4px;
+    margin-left:1px;
+}
+.last__social
+{
+    margin-left:0`px;
+}
+.social__item:hover{
+    cursor: pointer;
+}
