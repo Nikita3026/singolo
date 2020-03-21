@@ -100,6 +100,85 @@ window.addEventListener("load", function() {
         event.preventDefault();
         dialog.close();
         dialog.remove();
+        firstRequired.value ="";
+        secondRequired.value ="";
+        subjectInput.value="";
+        describeInput.value="";
     })
+
+    //Slider
+    
+//Slider
+let slice = document.querySelectorAll(".slide_single");
+const leftArrow1 = document.querySelector(".arrow__left");
+const rightArrow1 = document.querySelector(".arrow__right");
+const leftArrow2 = document.querySelector(".arrow__left2");
+const rightArrow2 = document.querySelector(".arrow__right2");
+const mainSlider = document.querySelector(".slider");
+
+let slider = [];
+for(let i = 0;i<slice.length;i++)
+{
+     slider[i] = slice[i];
+     slice[i].remove();
+}
+
+let step = 0;
+let offSet = 0;
+let counterOfSteps = 0;
+
+function draw(){
+    slider[step].style.left = offSet*960 + "px";
+    document.querySelector(".sliders__block").appendChild(slider[step]);
+    if(step+1 == slider.length) step = 0;
+    else step++;
+    offSet = 1;
+}
+
+function drawReverse(){
+    slider[step].style.left = offSet*960 + "px";
+    document.querySelector(".sliders__block").appendChild(slider[step]);
+    if(step+1 == slider.length) step = 0;
+    else step++;
+    offSet = -1;
+}
+
+function left(){
+    let slides2 = document.querySelectorAll(".slide_single");
+    let offSet2 = 0;
+        slides2[0].style.left = offSet2*960 - 960 + "px";
+        offSet2++;
+        if( counterOfSteps %2==0) mainSlider.style.backgroundColor = "#648BF0";
+        else  mainSlider.style.backgroundColor = "#F06C64";
+        counterOfSteps++;
+        slides2[1].style.left = offSet2*960 - 960 + "px";
+        offSet2++;
+    setTimeout(function(){
+       slides2[0].remove();
+        draw();
+    },1000);
+}   
+
+function right(){
+    let slides3 = document.querySelectorAll(".slide_single");
+    let offSet3 = 1;
+    slides3[0].style.left = offSet3*960 + "px";
+    offSet3--;
+    if( counterOfSteps %2==0) mainSlider.style.backgroundColor = "#648BF0";
+    else  mainSlider.style.backgroundColor = "#F06C64";
+    counterOfSteps++;
+    slides3[1].style.left = offSet3*960 + "px";
+    setTimeout(function(){
+        slides3[0].remove();
+        draw();
+    },1000);
+}   
+
+leftArrow1.addEventListener("click",left);
+leftArrow2.addEventListener("click",left);
+rightArrow1.addEventListener("click",right);
+rightArrow2.addEventListener("click",right);
+
+draw();draw();
 
 });

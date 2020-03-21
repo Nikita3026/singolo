@@ -177,18 +177,38 @@ p {
 .slider {
     height: 600px;
     background-color: #DA7066;
+    transition: all ease 1s;
 }
 
+.sliders__block{
+    width:960px;
+    height:600px;
+    position:relative;
+    overflow: hidden;
+}
+
+.slide_single{
+    width:960px;
+    height:600px;
+    position: absolute;
+    transition: all ease 1s;
+    left:0;
+    top:0;
+}
 .arrow__left {
     position: absolute;
-    left: 12px;
-    top: 281px;
+    left: 3.92%;
+    right: 94.51%;
+    top: 47.83%;
+    bottom: 47.67%;
 }
 
 .arrow__right {
     position: absolute;
-    right: 10px;
-    top: 280px;
+    left: 94.51%;
+    right: 3.92%;
+    top: 47.83%;
+    bottom: 47.67%;
 }
 
 .arrow__left:hover,
@@ -234,17 +254,12 @@ p {
     height: 335px;
 }
 
-.sliders__block {
-    width: 2040px;
-    overflow: hidden;
-}
-
 
 /* Slide-2 */
 
 .images_slide2 {
     position: relative;
-    width: 1020px;
+    width: 960px;
     height: 600px;
     background: #648BF0;
 }
@@ -277,8 +292,8 @@ p {
 
 .phone_vertical_display {
     position: absolute;
-    left: 39.01%;
-    right: 41.42%;
+    left: 41.41%;
+    right: 37.62%;
     top: 18.67%;
     bottom: 22.38%;
     z-index: 5;
