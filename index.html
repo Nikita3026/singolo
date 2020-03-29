@@ -4,6 +4,7 @@
 <head>
     <meta charset='utf-8'>
     <title>Singolo</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
 </head>
 
@@ -11,7 +12,19 @@
     <header class="header">
         <div class="container">
             <div class="header__inner">
+                <div class="menu-button">
+                    <span class="span"></span>
+                </div>
                 <h1 class="logo">Singolo<span class="red__logo">*</span></h1>
+                <nav class="small-nav">
+                    <ul class="small__nav__links">
+                        <li class="small__list"><a class="small__nav__link" href="#home__nav">Home</a></li>
+                        <li class="small__list"><a class="small__nav__link" href="#services__nav">Services</a></li>
+                        <li class="small__list"><a class="small__nav__link" href="#portfolio__nav">Portfolio</a></li>
+                        <li class="small__list"><a class="small__nav__link" href="#about__nav">About</a></li>
+                        <li class="small__list"><a class="small__nav__link last" href="#contact__nav">Contact</a></li>
+                    </ul>
+                </nav>
                 <nav class="nav">
                     <ul class="nav__links">
                         <li class="list"><a class="nav__link first" href="#home__nav">Home</a></li>
@@ -37,13 +50,9 @@
                     <img class="arrow__right" src="assets\images\chev_right.png" alt="Arrow of slider">
                 </div>
                 <div class="images_slide2 slide_single">
-                        <img class="arrow__left2" src="assets\images\chev_left.png" alt="Arrow of slider">
-                        <img class="arrow__right2" src="assets\images\chev_right.png" alt="Arrow of slider">
-                    <div class="phone_vertical_display"></div>
-                    <div class="blackVerticalScreen2" hidden></div>
-                    <img class="vertical__phone1" src="assets\images\veritacl_iphone.png" alt="Iphone image">
-                    <img class="vertical__phone2" src="assets\images\veritacl_iphone.png" alt="Iphone image">
-                    <img class="vertical__phone3" src="assets\images\veritacl_iphone.png" alt="Iphone image">
+                    <img class="arrow__left2" src="assets\images\chev_left.png" alt="Arrow of slider">
+                    <img class="telSlide2" src="assets\images\slider2.jpg">
+                    <img class="arrow__right2" src="assets\images\chev_right.png" alt="Arrow of slider">
 
                 </div>
             </div>
@@ -57,50 +66,46 @@
                 <p class="text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
             </div>
             <div class="service__description__block">
-                <div class="service__line">
-                    <div class="service">
-                        <img class="service__image" src="assets\images\design.png" alt="service image">
-                        <div class="service__text__block">
-                            <p class="service__title">Custom Design</p>
-                            <p class="service__text">Curabitur vestibulub eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit</p>
-                        </div>
-                    </div>
-                    <div class="service">
-                        <img class="service__image" src="assets\images\idea.png" alt="service image">
-                        <div class="service__text__block">
-                            <p class="service__title">Inovative Ideas</p>
-                            <p class="service__text"> Quisque luctus, quam eget molestie com&shy;modo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
-                        </div>
-                    </div>
-                    <div class="service">
-                        <img class="service__image" src="assets\images\heart.png" alt="service image">
-                        <div class="service__text__block">
-                            <p class="service__title">Love Is The Answer</p>
-                            <p class="service__text">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
-                        </div>
+                <div class="service">
+                    <img class="service__image" src="assets\images\design.png" alt="service image">
+                    <div class="service__text__block">
+                        <p class="service__title">Custom Design</p>
+                        <p class="service__text">Curabitur vestibulub eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit</p>
                     </div>
                 </div>
-                <div class="service__line">
-                    <div class="service">
-                        <img class="service__image" src="assets\images\phone.png" alt="service image">
-                        <div class="service__text__block">
-                            <p class="service__title">Responsive Layout</p>
-                            <p class="service__text">Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Prae&shy;sent elit leo.</p>
-                        </div>
+                <div class="service">
+                    <img class="service__image" src="assets\images\idea.png" alt="service image">
+                    <div class="service__text__block">
+                        <p class="service__title">Inovative Ideas</p>
+                        <p class="service__text"> Quisque luctus, quam eget molestie com&shy;modo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
                     </div>
-                    <div class="service">
-                        <img class="service__image" src="assets\images\bubble.png" alt="service image">
-                        <div class="service__text__block">
-                            <p class="service__title">24 / 7 Support</p>
-                            <p class="service__text">Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellen&shy;tesque egestas venenatis lorem .</p>
-                        </div>
+                </div>
+                <div class="service">
+                    <img class="service__image" src="assets\images\heart.png" alt="service image">
+                    <div class="service__text__block">
+                        <p class="service__title">Love Is The Answer</p>
+                        <p class="service__text">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
                     </div>
-                    <div class="service">
-                        <img class="service__image" src="assets\images\star.png" alt="service image">
-                        <div class="service__text__block">
-                            <p class="service__title">Feel Like A Star</p>
-                            <p class="service__text">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus</p>
-                        </div>
+                </div>
+                <div class="service">
+                    <img class="service__image" src="assets\images\phone.png" alt="service image">
+                    <div class="service__text__block">
+                        <p class="service__title">Responsive Layout</p>
+                        <p class="service__text">Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Prae&shy;sent elit leo.</p>
+                    </div>
+                </div>
+                <div class="service">
+                    <img class="service__image" src="assets\images\bubble.png" alt="service image">
+                    <div class="service__text__block">
+                        <p class="service__title">24 / 7 Support</p>
+                        <p class="service__text">Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellen&shy;tesque egestas venenatis lorem .</p>
+                    </div>
+                </div>
+                <div class="service">
+                    <img class="service__image" src="assets\images\star.png" alt="service image">
+                    <div class="service__text__block">
+                        <p class="service__title">Feel Like A Star</p>
+                        <p class="service__text">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus</p>
                     </div>
                 </div>
             </div>
@@ -144,7 +149,7 @@
             </div>
             <div class="peoples">
                 <div class="people__item">
-                    <img alt="people image" src="assets\images\people_01.jpg">
+                    <img class="people__image" alt="people__image" src="assets\images\people_01.jpg">
                     <p class="people__name">Adam Jensen</p>
                     <p class="people__info people__first">
                         Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.
@@ -157,7 +162,7 @@
                     </div>
                 </div>
                 <div class="people__item people__second">
-                    <img alt="people image" src="assets\images\people_02.jpg">
+                    <img class="people__image" alt="people__image" src="assets\images\people_02.jpg">
                     <p class="people__name">Desmond Miles</p>
                     <p class="people__info">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
                     <div class="people__socials">
@@ -168,7 +173,7 @@
                     </div>
                 </div>
                 <div class="people__item last">
-                    <img alt="people image" src="assets\images\people_03.jpg">
+                    <img class="people__image" alt="people__image" src="assets\images\people_03.jpg">
                     <p class="people__name">Scolara Visari</p>
                     <p class="people__info">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
                     <div class="people__socials">
@@ -184,10 +189,8 @@
     <div class="about__us__line"></div>
     <div class="Get_a_Quote" id="contact__nav">
         <div class="container quote">
-            <div class="textBlock">
-                <p class="title__quote">Get a Quote</p>
-                <p class="text__quote">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-            </div>
+            <p class="title__quote">Get a Quote</p>
+            <p class="text__quote">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
             <div class="form-contacts">
                 <form class="form-block" method="POST">
                     <input type="text" name="name" id="name-required" placeholder="Name (Required)" required>
@@ -230,7 +233,6 @@
         <div class="container quote">
             <div class="footer">
                 <p class="copyright">© Copyright 2013</p>
-                <span class="copyright_chat">by PSDchat.com</span>
                 <div class="social networks footer">
                     <a><img class="footer network facebook" src="assets\images\facebook.png"></a>
                     <a><img class="footer network" src="assets\images\google.png"></a>
